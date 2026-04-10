@@ -1,0 +1,169 @@
+/* --- LE COEUR DU DESIGN --- */
+:root {
+    --accent-red: #d20000;
+    --gold: #ffcc00;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* On utilise ton image de fond */
+    background: url('image_aabd83.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Arial Black', sans-serif; /* Style impactant pour le catch */
+}
+
+/* --- LE MENU --- */
+header {
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+    padding: 20px 0;
+    border-bottom: 2px solid var(--accent-red);
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center;    /* Centre tout horizontalement */
+    gap: 20px;              /* Espace entre le logo et le menu */
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 150px; /* On peut se permettre de le mettre un peu plus grand s'il est au centre ! */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Petit effet de zoom au survol */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centre les liens du menu */
+    gap: 20px;
+    flex-wrap: wrap; /* Pour que le menu reste beau sur mobile */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: var(--accent-red);
+}
+
+/* --- LE CONTENU --- */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.7); /* Fond noir semi-transparent pour lire le texte */
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+h1, h2 {
+    color: white;
+    text-transform: uppercase;
+    border-left: 5px solid var(--accent-red);
+    padding-left: 15px;
+}
+
+.btn {
+    background: var(--accent-red);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+footer {
+    text-align: center; /* Centre le texte horizontalement */
+    padding: 20px 0;    /* Ajoute un peu d'espace en haut et en bas */
+    width: 100%;        /* S'assure qu'il prend toute la largeur */
+    border-top: 1px solid #333; /* Un petit trait discret pour séparer du contenu */
+    margin-top: 40px;   /* Donne de l'air par rapport au reste de la page */
+    color: #888;        /* Une couleur grise plus sobre pour le copyright */
+}
+.histoire-centree {
+    max-width: 1000px; /* On limite la largeur pour que ce soit plus beau */
+    margin: 0 auto;   /* Centre le bloc sur la page */
+    text-align: center; /* Centre le texte à l'intérieur */
+    padding: 40px 20px;
+}
+
+.histoire-centree h1 {
+    color: var(--accent-red);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.histoire-centree p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.mission-centree {
+    max-width: 1000px; /* On limite la largeur pour que ce soit plus beau */
+    margin: 0 auto;   /* Centre le bloc sur la page */
+    text-align: center; /* Centre le texte à l'intérieur */
+    padding: 40px 20px;
+}
+
+.mission-centree h1 {
+    color: var(--accent-red);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.mission-centree p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.bsp-centree {
+    max-width: 1000px; /* On limite la largeur pour que ce soit plus beau */
+    margin: 0 auto;   /* Centre le bloc sur la page */
+    text-align: center; /* Centre le texte à l'intérieur */
+    padding: 40px 20px;
+}
+
+.bsp-centree h1 {
+    color: var(--accent-red);
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.bsp-centree p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
